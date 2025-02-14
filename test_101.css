@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    overflow: hidden; /* Prevents scrolling */
+    /* overflow: hidden; Prevents scrolling */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -41,7 +41,7 @@ h1 {
 }
 .gallery {
     height: auto;
-    overflow: hidden; /* Prevents extra space */
+    /* overflow: hidden; Prevents extra space */
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
