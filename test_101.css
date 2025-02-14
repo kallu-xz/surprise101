@@ -1,0 +1,83 @@
+body {
+    height: 100vh;
+    overflow: hidden; /* Prevents scrolling */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #fffdef;
+    color: #2e2b26;
+    margin: 0;
+    padding: 0;
+    
+}
+.grid_101 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes sections evenly */
+    height: 100vh;
+}
+.hero {
+    font-family: "Luckymoon";
+    height: 15vh;
+    padding: 40px 20px;
+    background: url(1234.jpg) no-repeat center center/cover;
+    color: #2e2b26;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Flexbox for centering */
+    display: flex;
+    flex-direction: column; /* Stack items (h1 and .short) in a column */
+    justify-content: center; /* Center them vertically */
+    align-items: center; /* Center them horizontally */
+    text-align: center; /* Ensures text alignment is centered */
+}
+h1 {
+    font-size: clamp(1.5em, 4vw, 4em); /* Adjusts text size based on screen width */
+    white-space: nowrap; /* Prevents text from wrapping onto the next line */
+    margin: 0;
+}
+.short {
+    font-size: clamp(1em, 3vw, 2em);
+    white-space: nowrap; /* Prevents wrapping */
+}
+.gallery {
+    height: auto;
+    overflow: hidden; /* Prevents extra space */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.gallery img {
+    width: 70%;
+    max-width: 500px; /* Ensures it doesn’t get too large on big screens */
+    height: auto;
+    object-fit: contain; /* Ensures the image doesn’t get cropped */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.message {
+    font-family: "g Gurun";
+    background: white;
+    padding: 10px;
+    margin: 30px auto;
+    overflow: auto; /* Allows scrolling if text overflows */
+    width: 100%; /* Ensures 30px space on left & right */
+    max-width: 90vw;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto; /* Height adjusts to content */
+    overflow: hidden; /* Prevents text overflow */
+}
+.footer {
+    font-family: "g Gurun";
+    height: 4vh; /* Smaller height */
+    display: flex;
+    padding: 15px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: #2e2b26;
+    color: white;
+    font-size: 1em; /* Adjust font size */
+}
