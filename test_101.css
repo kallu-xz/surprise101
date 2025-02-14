@@ -62,13 +62,13 @@ h1 {
     background: white;
     padding: 10px;
     margin: 30px auto;
-    overflow: auto; /* Allows scrolling if text overflows */
+    /* overflow: auto; Allows scrolling if text overflows */
     width: 100%; /* Ensures 30px space on left & right */
     max-width: 90vw;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: auto; /* Height adjusts to content */
-    overflow: hidden; /* Prevents text overflow */
+    /* overflow: hidden; Prevents text overflow */
 }
 .footer {
     font-family: "g Gurun";
