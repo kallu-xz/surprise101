@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday ✿ ♡</title>
+    <title>Surprise_101 ✿ ♡</title>
     <link rel="stylesheet" href="test_101.css">
     <!-- Confetti Library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -17,6 +17,8 @@
             });
         };
     </script>
+    <!-- title icon -->
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
     <!--Font-->
     <link href="https://db.onlinewebfonts.com/c/b9811a2f36c408ce8e6605f4fbafad8e?family=Luckymoon" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/a2c846cf85e488cc2068078cfff2f429?family=g+Gurun" rel="stylesheet">
@@ -27,7 +29,7 @@
         <!-- Hero Section -->
         <div class="hero">
             <h1>⁠✿⁠ Happy Birthday, Tanha !! ✿⁠</h1>
-            <p class="short">You're the most amazing person I know. Let's celebrate you!</p>
+            <p class="short">Today is your day, and you deserve all the happiness in the world!!</p>
         </div>
         <!-- Gallery Section -->
         <div class="gallery">
@@ -37,13 +39,35 @@
         <!-- Message Section -->
         <div class="message">
             <p>Dear Tanha,</p>
-            <p>On your special day, I want to remind you how incredible you are. You light up every room you walk into, and I'm so grateful to have you in my life. Here's to another year of laughter, adventures, and dreams coming true! 🥂</p>
-            <p>With all my heart,<br>Your Stranger</p>
+            <p>On your special day, I want to remind you that, From your beautiful eyes to your kind heart, everything about you is truly special. Your smile brightens even the dullest days, and your voice feels like a song I never want to stop listening to. Your kindness, your patience, and the way you make people feel valued—it's all so rare and precious. <br>I pray to Allah for your health, happiness, and every dream you wish for. May your life be as beautiful as your heart, and may you always find reasons to smile.</p>
+            <p>Wishing you all the love and blessings,<br>Your Stranger</p>
         </div>
         <!-- Footer -->
         <div class="footer">
             <p>Made with ⁠♡ by Zahidul Islam Zihad</p>
         </div>
+        <audio id="bg-music" autoplay loop>
+            <source src="happy.mp3" type="audio/mpeg">
+            <!-- Your browser does not support the audio element. -->
+          </audio>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var bgMusic = document.getElementById("bg-music");
+          
+          // Set the volume to 30%
+          bgMusic.volume = 0.3;
+    
+          // Try to play the audio immediately
+          bgMusic.play().catch(function(error) {
+            console.log("Autoplay was prevented:", error);
+            
+            // If autoplay is blocked, play on first user interaction
+            document.addEventListener("click", function() {
+              bgMusic.play();
+            }, { once: true });
+          });
+        });
+      </script>
 </body>
 </html>
